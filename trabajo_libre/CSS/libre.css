@@ -1,0 +1,187 @@
+/*body para poner la imagen de fondo de pantalla*/
+body{
+  background-image:url(../imagenes/monte_fuji.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;  
+  background-size: cover;
+}
+footer{
+  display: flex;
+  align-items: flex-end;
+  margin-top: 16%;
+  height: 100%;
+}
+h1{
+  font: oblique bold 120% cursive;
+  margin-left: 40%;
+  font-size: 50px;
+}
+/*todos los elementos dentro de mi flex box*/
+.flex{
+  align-items: center;
+  margin-top: 7rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.flex.a{
+  width: 10rem;
+  height: 5rem;
+}
+.a{
+  box-shadow: rgba(164, 143, 3, 0.4) 5px 5px, rgba(226, 187, 12, 0.326) 10px 10px, rgba(242, 213, 26, 0.435) 15px 15px, rgba(7, 186, 52, 0.1) 20px 20px, rgba(240, 46, 170, 0.05) 25px 25px;;
+}
+.b{
+  box-shadow: rgba(14, 15, 14, 0.4) 5px 5px, rgba(0, 16, 9, 0.373) 10px 10px, rgba(46, 48, 46, 0.2) 15px 15px, rgba(54, 57, 55, 0.1) 20px 20px, rgba(240, 46, 170, 0.05) 25px 25px;;
+}
+.c{
+  box-shadow: rgba(147, 6, 6, 0.294) 5px 5px, rgba(158, 8, 8, 0.436) 10px 10px, rgba(182, 11, 11, 0.46) 15px 15px, rgba(7, 186, 52, 0.1) 20px 20px, rgba(240, 46, 170, 0.05) 25px 25px;;
+}
+.a>p{
+  font: oblique bold 120% cursive;
+  text-align: center;
+  font-size: 30px;
+  color: rgb(237, 175, 4);
+}
+.b>p{
+  font: oblique bold 120% cursive;
+  text-align: center;
+  font-size: 30px;
+}
+.c>p{
+  font: oblique bold 120% cursive;
+  text-align: center;
+  font-size: 30px;
+  color: red;
+}
+
+.flex.b{
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  width: 10rem;
+  height: 5rem;
+}
+.flex.c{
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  width: 1rem;
+  height: 1rem;
+}
+
+
+
+/* Menu de navegación --------- */
+nav{
+  background: #218179;
+  height: 80px;
+  width: 100%;
+}
+.enlace{
+  position: absolute;
+  padding-left:10px;
+}
+.logo{
+  height: 80px;
+}
+nav ul{
+  float: right;
+  margin-right: 80px;
+}
+nav ul li{
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 5px;
+}
+nav ul li a{
+  color:white;
+  font-size: 15px;
+  padding: 7px 13px;
+  border-radius: 3px;
+  text-transform: uppercase;
+}
+li a.active, li a:hover{
+  background: #0f533f;
+  transition: .5s;
+}
+.checkbtn{
+  font-size: 30px;
+  color: white;
+  float: right;
+  line-height: 80px;
+  margin-right: 70px;
+  cursor: pointer;
+  display: none;
+}
+#check{
+  display: none;
+}
+
+/*div de mi footer, que contiene informacion de las cookies*/
+#negra{
+  background-color: #071310;
+  height: 100%;
+}
+#negra>p{
+  position: relative;
+  color: white;
+  text-align: center;
+  z-index: 0;
+  margin-left: 20%;
+  margin-right: 20%;
+}
+
+/*media quesry para moviles*/
+@media all and (max-width: 600px){
+  .flex{
+    flex-direction: column;
+  }
+  nav{
+    position: absolute;
+    height: 20%;
+    width: 100%;
+  }
+  .flex>div>img{
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 10%;
+  }
+  h1{
+    color: transparent
+  }
+  nav ul li #pg, #pr, #po{
+    color: transparent;
+  }
+  nav img{
+    margin-left: 380px;
+  }
+}
+/*media quesry para tablet en horizontal*/
+@media (min-width: 600px) and (max-width: 1024px) {
+  .flex{
+    flex-direction: column;
+  }
+  nav{
+    position: absolute;
+    height: 10%;
+    width: 100%;
+  }
+  h1{
+    color: transparent
+  }
+  nav ul li #pg{
+      color: transparent;
+  }
+  nav img{
+      margin-left: 550px;
+  }
+  nav ul li #pg, #pr, #po{
+    color: transparent;
+  }
+}
+/*media quesry para tablet en vertical*/
+@media (min-width: 1025px) and (max-width: 1600px) {
+  .flex{
+    flex-direction: column;
+  }
+  h1{
+    margin-left: 35%;
+  }
+}

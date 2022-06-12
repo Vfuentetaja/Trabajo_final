@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Registro</title>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="CSS/Formulario.css">
+</head>
+	<body>
+		<!--Menu de navegacion-->
+		<nav>
+			<input type="checkbox" id="check">
+			<label for="check" class="checkbtn">
+				<i class="fas sa-bars"></i>
+			</label>
+			<a href="#" class="enlace">
+				<img src="imagenes/logo.png" alt="" class="logo">
+			</a>
+			<ul>
+				<li><a class="active" href="../trabajo_libre/trabajo_libre.html">Inicio</a></li>
+				<li><a href="../sobre_nosotros/sobre_nosotros.html">Sobre Nosotros</a></li>
+				<li><a href="#">Contacto</a></li>
+				<li><a href="../formulario/formulario.html">Regístrate</a></li>
+				<li><a id="pg" href="#">Panda Gigante</a></li>
+				<li><a id="pr" href="#">Panda Rojo</a></li>
+				<li><a id="po" href="#">Panda Po</a></li>
+			</ul>
+		</nav>
+		<!--Formulario para el registro-->
+		<p id="titulo">REGISTRO</p>
+		<br>
+		<form action="registro.php" method="POST">
+        <label for="nombre">NOMBRE (*)</label>
+				<input placeholder="nombre..." name="fnombre" type="text" id="nombre">
+        
+        <label for="apellido">APELLIDOS (*)</label>
+				<input placeholder="apellido..." name="fapellido" type="text" id="apellido">
+
+        <label for="correo">CORREO ELECTRÓNICO </label>
+				<input placeholder="e-mail" name="femail" type="text" id="correo">
+
+        <label for="contra">CONTRASEÑA (*)</label>
+				<input placeholder="contraseña" name="fpassword" type="password" id="contra">
+		<label for="contra1">VALIDAR CONTRASEÑA (*)</label>
+				<input placeholder="validar contraseña" name="fpassword" type="password" id="contra1">		
+
+        <label for="fecha">FECHA NACIMIENTO (*) </label>
+				<input placeholder="DD/MM/AAAA" name="ffechanacimiento" type="text" id="fecha">
+
+        <label for="genero">GÉNERO (*)</label>
+			<select name="genero" id="genero">	
+				<option>Selecciona un genero</option>
+				<option>Masculino</option>	
+			  	<option>Femenino</option>	
+			</select>	
+			  <button name="registro" type="submit" id="button"> ¡Registrarse! </button>
+		</form>
+		<!--Pie de pagina-->
+		<div id="negra">
+			<p>Las cookies son la tecnología más empleada para el seguimiento de los visitantes de un sitio web, así como para recopilar y compartir sus datos con diversos fines, como recordar los datos de inicio de sesión o el contenido de la cesta de la compra, mostrar publicidad dirigida en tu dominio o proporcionarte datos sobre el rendimiento de tu sitio web entre sus usuarios. </p>
+		  </div>
+	</body>
+</html>

@@ -1,0 +1,214 @@
+body{
+    background-image:url(../imagenes/monte_fuji.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* TITULO -------------------------------------------------------- */
+#formulario{
+    font-family: sans-serif;
+    background: #14376d;
+    color: white;
+    padding: 5px;
+    text-align: center;
+    border-top-left-radius: 19px;
+    border-top-right-radius: 19px;
+    border-bottom: 5px solid #205ab4;
+    margin-bottom:5px; 
+}
+  /* FORMULARIO: fondo blanco y casillas --------------------------- */
+form{
+    /*background-color: white;*/
+    color:#000000;
+    margin:10px;
+    margin:0 auto;
+    margin-top: 40px;
+    border-radius:19px;
+    width: 40%;
+    /* SECUENCIA: para centrar formulario */
+    position: absolute;
+    top: 50%; 
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+    /* TAMAÑO LETRA: nombre, apellido, e-mail, etc ----- */
+label{
+    margin-left: 8px;
+    font-size: 18px;
+    padding: 5px;
+    display:block;
+    width: 100%;
+    font-family: sans-serif;
+    font-weight: 700;
+    color: #000000;
+} 
+    /* EDICION CADA INPUT: diseño ----------------------- */
+input{
+        margin-bottom:10px; 
+        width: 95%;
+        padding: 2%;
+        margin-left: 10px;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        border: 1px solid rgb(0, 0, 0);
+}
+      /* Cuando da click dentro de un input --------------- */
+input:focus{
+background-color: #F2F2F2;
+} 
+  /* FUNCION DEL BOTON REGISTRARSE --------- */
+#button{
+          width: 94%;
+          font-family: sans-serif;
+          font-size:18px;
+          font-weight: bolder;
+          background-color: #124743;
+          color: rgb(255, 255, 255);
+          cursor: pointer;
+          margin-bottom:10px;
+          margin-left:15px;
+          border: none;
+          padding: 3%;
+          border-radius: 20px 10px 20px 10px;
+      /* SOMBRA BOTON: darle sommbre al boton "resgistrarse"*/
+          -webkit-box-shadow: 4px 9px 8px -4px rgba(0,0,0,0.75);
+          -moz-box-shadow: 4px 9px 8px -4px rgba(0,0,0,0.75);
+           box-shadow: 4px 9px 8px -4px rgba(0,0,0,0.75);      
+}
+#button:hover{
+    background-color: #348b76;
+}
+
+#genero{
+    margin-bottom:15px; 
+    width: 95%;
+    padding: 2%;
+    margin-left: 10px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    border: 1px solid rgb(0, 0, 0);
+}
+#registro{
+    position: absolute;
+    top: 20%;
+    right: 46%;
+    font-size: 40px;
+    color: white;
+}
+
+/* Titulo --------- */
+#titulo{
+    font-size: 30px;
+    position: absolute;
+    top: 10%;
+    right: 50%;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+/* Menu de navegación --------- */
+nav{
+    background: #218179;
+    height: 80px;
+    width: 100%;
+}
+.enlace{
+    position: absolute;
+    padding-left:10px;
+}
+.logo{
+    height: 80px;
+}
+nav ul{
+    float: right;
+    margin-right: 80px;
+}
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+nav ul li a{
+    color:white;
+    font-size: 15px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+}
+li a.active, li a:hover{
+    background: #0f533f;
+    transition: .5s;
+}
+.checkbtn{
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 70px;
+    cursor: pointer;
+    display: none;
+}
+#check{
+    display: none;
+}
+
+div{
+    margin-top:1000px;
+    padding:70px;
+}
+#negra{
+    background-color: #071310;
+}
+#negra>p{
+    position: relative;
+    color: white;
+    text-align: center;
+    z-index: 0;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+/*media quesry para moviles*/
+@media all and (max-width: 600px){
+    nav{
+        position: absolute;
+        height: 20%;
+        width: 100%;
+    }
+    nav ul li #pg, #pr, #po{
+        color: transparent;
+    }
+    nav img{
+        margin-left: 380px;
+    }
+    p{
+        color: transparent;
+    }
+    form{
+        margin-top: 20%;
+    }
+
+}
+/*media quesry para tablet en horizontal*/
+@media (min-width: 600px) and (max-width: 1024px) {
+    nav{
+        position: absolute;
+        height: 10%;
+        width: 100%;
+    }
+    nav ul li #pg{
+        color: transparent;
+    }
+    nav img{
+        margin-left: 550px;
+    }
+    nav ul li #pg, #pr, #po{
+        color: transparent;
+    }
+}
+/*media quesry para tablet en vertical*/
+@media (min-width: 1024px) and (max-width: 1280px) {
+    nav ul li #pg, #pr, #po{
+        color: transparent;
+    }
+}
